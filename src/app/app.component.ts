@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { CommentSchema } from './data/comment-schema';
+import Comment from './models/Comment';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +9,5 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'nested-component';
+  commentSchema: Array<Comment> = CommentSchema;
 }
